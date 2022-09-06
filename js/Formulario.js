@@ -13,11 +13,12 @@ const Formulario = stampit({
         this.correo = correo;
         this.telefono = telefono;
         this.comentario = comentario;
+        return true; 
     },
     methods: {
         toString() {
             return `Nombre: ${this.nombre}, Correo: ${this.correo}, Telefono: ${this.telefono}, Comentario: ${this.comentario}`;
-        }
+        },
     },
 });
 
